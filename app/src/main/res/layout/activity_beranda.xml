@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".BerandaActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rangkuman"
+        android:text="Rangkuman Buku ini"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rangkuman"
+        android:id="@+id/line1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="110dp"
+        >
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pengeluaran"
+            android:text="pengeluaran :"
+            android:textColor="@color/teal_700"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pengeluaranid"
+            android:text="angka"
+            android:textColor="@color/teal_700"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:id="@+id/line2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="110dp"
+        >
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pemasukan"
+            android:text="pemasukan :"
+            android:textColor="@color/teal_200"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pemasukanid"
+            android:text="angka"
+            android:textColor="@color/teal_200"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+<!--    <com.jjoe64.graphview.GraphView-->
+<!--        android:id="@+id/graph"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dip"-->
+<!--        android:layout_below="@+id/line2"-->
+<!--        android:layout_marginTop="10dp" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:id="@+id/linear1"
+        android:layout_below="@+id/line2"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/tambahpemasukan"
+            android:src="@drawable/coin"
+            android:contentDescription="TODO" />
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:id="@+id/tambahpengeluaran"
+            android:layout_marginLeft="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/income"
+            android:contentDescription="TODO" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/halaman_siswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="casual"
+        android:text="Tambah pemasukan"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/halaman_bayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="casual"
+        android:text="tambahkan pengeluaran"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:id="@+id/linear2"
+        android:layout_marginEnd="40dp"
+        android:layout_below="@+id/linear1"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/detailcash"
+            android:src="@drawable/search"
+            android:contentDescription="TODO" />
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:id="@+id/pengaturan"
+            android:layout_marginLeft="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/gear"
+            android:contentDescription="TODO" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail CashFlow"
+        android:id="@+id/cashflow"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_below="@+id/linear2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengaturan"
+        android:id="@+id/pengaturan1"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_below="@+id/linear2"
+        android:layout_marginTop="5dp"
+        android:fontFamily="casual"
+        android:layout_marginLeft="250dp"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>
